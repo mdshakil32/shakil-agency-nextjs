@@ -73,3 +73,17 @@
 .service:hover .catInfo {
   opacity: 1;
 }
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  .services {
+    justify-content: center;
+  }
+
+  .service {
+    width: 100%;
+    height: 100%;
+  }
+}

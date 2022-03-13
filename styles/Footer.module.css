@@ -45,7 +45,22 @@
   flex: 1;
 }
 .cardItem {
-  /* font-size: 14px; */
+  font-size: 14px;
   margin-bottom: 20px;
-  /* text-align: right; */
+  text-align: right;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .title,
+  .linkTitle {
+    font-size: 25px;
+  }
+
+  .cardItem {
+    text-align: center;
+  }
 }

@@ -1,9 +1,16 @@
+import Head from 'next/head'
 import Circle from "../Components/Circle";
 import style from "../styles/Contact.module.css";
 
 const contact = () => {
     return (
         <div className={style.component}>
+            <Head>
+                <meta charSet="utf-8" />
+                <title>Shakil Agency</title>
+                <meta name="description" content="We provide Services about web development, design, production, photography" />
+                <meta property='og:title' content="Shakil agency for web development, design,photography,production" />
+            </Head>
             <Circle backgroundColor="green" left="-40vh" top="-20vh" className={style.circle}/>
             <Circle backgroundColor="yellow" right="-30vh" bottom="-60vh" className={style.circle}/>
             <h1 className={style.title}>Get in Touch</h1>
