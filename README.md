@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project 
 
+## I just wanted know how next js works. And this is the output of 3 days of exploring about next js.
+## shakil-agency-next.netlify.app/
 ## Getting Started
 
 First, run the development server:
