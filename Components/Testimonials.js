@@ -11,7 +11,7 @@ const Testimonials = () => {
             <div className={style.wrapper}>
                 {users.map((user) => (
                     <div className={style.card} key={user.id}>
-                        <Image src={`/img/${user.logo}`} width="30" height="30" alt="" />
+                        <Image src={`/img/${user.logo}`} width="30" height="30" alt="Yahoo, Google, Facebook" />
                         <p className={style.comment}> {user.comment}</p>
 
                         <div className={style.person}>
@@ -21,7 +21,7 @@ const Testimonials = () => {
                                 width="45"
                                 height="45"
                                 objectFit="cover"
-                                alt=""
+                                alt={`${user.name}`}
                             />
                             <div className={style.info}>
                                 <span className={style.username}>{user.name}</span>

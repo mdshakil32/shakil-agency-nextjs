@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import {data} from "../../data.js";
 import style from "../../styles/Product.module.css";
 import Image from "next/image";
@@ -6,6 +7,15 @@ import Link from "next/link";
 const Product = ({product}) => {
     return (
         <div className={style.container}>
+          <Head>
+            <title>Shakil Agency</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
+
+            <meta name="description" content={`We provide best ${product.title} service and resonable price`}  />
+            <meta property={`og:${product.title}`} content={`${product.longDesc}`} />
+            
+          </Head>
+
             <div className={style.cardL}>
                 {product.images.map((img) => (
                 <div key={img.id} className={style.imgContainer}>
@@ -14,7 +24,7 @@ const Product = ({product}) => {
                     width="100%" 
                     height="100%" 
                     objectFit="cover" 
-                    alt=""
+                    alt={`${product.title}`}
                     layout="responsive" />
                 </div>
                 ))}

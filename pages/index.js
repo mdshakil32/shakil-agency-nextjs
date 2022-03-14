@@ -15,7 +15,6 @@ export default function Home({services}) {
       <Head>
         <title>Shakil Agency</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
-
         <meta name="description" content="We provide Services about web development, design, production, photography" />
         <meta property='og:title' content="Shakil agency for web development, design,photography,production" />
         
